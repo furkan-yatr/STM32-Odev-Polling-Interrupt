@@ -1,0 +1,17 @@
+/* USER CODE BEGIN WHILE */
+    while (1)
+    {
+      /* 1. Buton girişinin okunması (Push button input reading) - Polling Yöntemi */
+      if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_RESET)
+      {
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+      }
+      else
+      {
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+      }
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+    }
+    /* USER CODE END 3 */
